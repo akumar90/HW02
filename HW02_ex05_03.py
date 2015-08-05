@@ -21,13 +21,29 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a,b,c,n):
+	if(n>2):
+		print("a^n is " + str(a**n))
+		print("b^n is " + str(b**n))
+		print("Sum of a^n and b^n is " + str(a**n + b**n))
+		print("c^n is " + str(c**n))
+		if (a**n + b**n == c**n):
 
+			print ("Holy smokes, Fermat was wrong!")
+		else :
+			print ("No, that doesn't work")
 
+	else :
+		print("n is "+ str(n))
+		print("n is not greater than 2")
 
+def check_fermat_ints():
+	a = input('Enter the first number "a": ')
+	b = input('Enter the second number "b": ')
+	c = input('Enter the third number "c": ')
+	n = input('Enter the exponent number "n": ')
 
-
-
-
+	check_fermat(a,b,c,n)
 
 # Write your functions above:
 ################################################################################
@@ -40,6 +56,10 @@ def main():
     check_fermat()
     """
     print("Hello World!")
+    check_fermat(2,3,4,5)
+
+    check_fermat_ints()
+
 
 
 

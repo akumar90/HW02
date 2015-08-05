@@ -23,12 +23,25 @@
 # Write your functions below:
 # Body
 
+def is_triangle(a,b,c):
 
+    print ('Length of the first side "a": '+str(a))
+    print ('Length of the second side "b": '+str(b))
+    print ('Length of the third side "c": '+str(c))
 
+    if ((a + b > c) and (b + c > a) and (c + a > b)):
+        print ("Yes")
 
+    else :
+        print ("No")
 
+def is_triangle_usr_input():
 
+    a = input('Enter the length of the first side "a": ')
+    b = input('Enter the length of the second side "b": ')
+    c = input('Enter the length of the third side "c": ')
 
+    is_triangle(a,b,c)
 
 
 # Write your functions above:
@@ -46,6 +59,12 @@ def main():
     """
     print("Hello World!")
 
+    is_triangle(1,2,3)
+    is_triangle(1,2,4)
+    is_triangle(1,5,3)
+    is_triangle(6,2,3)
+
+    is_triangle_usr_input()
 
 
 if __name__ == "__main__":

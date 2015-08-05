@@ -35,16 +35,43 @@
 # Write your functions below:
 # Body
 
+def print_plus():
+	print '+',
 
+def print_ceiling():
+	print '- - - -',
 
+def skip_ceiling():
+	print "       ",
 
+def print_pipe():
+	print "|",
 
+def print_line(noOfColumns):
+	print_plus()
+	for x in range(0,noOfColumns):
+		print_ceiling()
+		print_plus()
 
+def print_skipped_line(noOfColumns):
+	print_pipe()
+	for x in range(0,noOfColumns):
+		skip_ceiling()
+		print_pipe()
 
+def go_to_new_line():
+	print 
 
+def draw_grid(noOfRows, noOfColumns):
+	
+	for x in range(0,noOfRows):
+		print_line(noOfColumns)
+		go_to_new_line()
+		for i in range(0,4):
+			print_skipped_line(noOfColumns)
+			go_to_new_line()
 
-
-
+	print_line(noOfColumns)
 
 # Write your functions above:
 ################################################################################
@@ -55,7 +82,10 @@ def main():
     four_by_four()
     """
     print("Hello World!")
-    
+    print
+    draw_grid(2,2)
+    print
+    draw_grid(4,4)
 
 
 
