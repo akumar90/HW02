@@ -86,6 +86,8 @@ def main():
     draw_grid(2,2)
     print
     draw_grid(4,4)
+    print
+    draw_grid(10,10)
 
 
 

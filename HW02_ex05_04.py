@@ -29,7 +29,7 @@ def is_triangle(a,b,c):
     print ('Length of the second side "b": '+str(b))
     print ('Length of the third side "c": '+str(c))
 
-    if ((a + b > c) and (b + c > a) and (c + a > b)):
+    if ((a + b >= c) and (b + c >= a) and (c + a >= b)):
         print ("Yes")
 
     else :

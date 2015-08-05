@@ -17,7 +17,7 @@
 
 def right_justify(s):
 	l = len(s)
-	for x in range(1,70-l):
+	for x in range(0,70-l):
 		s = " " + str(s)
 	print (s)
 
@@ -28,7 +28,7 @@ def main():
     #"""Call your functions within this function."""
     print("Hello World!")
     right_justify("Python")
-    right_justify("YOUR_NAME")
+    right_justify("Ankur Kumar")
 
 if __name__ == "__main__":
     main()
