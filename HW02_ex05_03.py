@@ -43,7 +43,7 @@ def check_fermat_ints():
 	c = input('Enter the third number "c": ')
 	n = input('Enter the exponent number "n": ')
 
-	check_fermat(a,b,c,n)
+	check_fermat(int(a),int(b),int(c),int(n))
 
 # Write your functions above:
 ################################################################################
